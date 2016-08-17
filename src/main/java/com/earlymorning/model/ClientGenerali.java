@@ -478,4 +478,52 @@ public class ClientGenerali {
     public void setsUltimateParentName(String sUltimateParentName) {
         this.sUltimateParentName = sUltimateParentName;
     }
+
+    @Override
+    public String toString() {
+        return "ClientGenerali{" +
+                "l_GlobalCompanyKey='" + l_GlobalCompanyKey + '\'' +
+                ", sGUNSNumber='" + sGUNSNumber + '\'' +
+                ", lDNBCompanyKey='" + lDNBCompanyKey + '\'' +
+                ", sCompanyName='" + sCompanyName + '\'' +
+                ", sCompanyAddress1='" + sCompanyAddress1 + '\'' +
+                ", sCompanyAddress2='" + sCompanyAddress2 + '\'' +
+                ", sCompanyAddress3='" + sCompanyAddress3 + '\'' +
+                ", sCompanyTownCity='" + sCompanyTownCity + '\'' +
+                ", sCompanyCounty='" + sCompanyCounty + '\'' +
+                ", sCompanyStateCode='" + sCompanyStateCode + '\'' +
+                ", sCompanyState='" + sCompanyState + '\'' +
+                ", sCompanyZipPostcode='" + sCompanyZipPostcode + '\'' +
+                ", sCompanyCountry='" + sCompanyCountry + '\'' +
+                ", lImmediateParentGlobalCompanyKey='" + lImmediateParentGlobalCompanyKey + '\'' +
+                ", lUltimateParentGlobalCompanyKey='" + lUltimateParentGlobalCompanyKey + '\'' +
+                ", lDomesticParentGlobalCompanyKey='" + lDomesticParentGlobalCompanyKey + '\'' +
+                ", sCompanySICCode='" + sCompanySICCode + '\'' +
+                ", dtLoaded='" + dtLoaded + '\'' +
+                ", dtUpdated='" + dtUpdated + '\'' +
+                ", bExternalValidationRequested='" + bExternalValidationRequested + '\'' +
+                ", bWillNeverBeExternallyValidated='" + bWillNeverBeExternallyValidated + '\'' +
+                ", bAwaitingCleansing='" + bAwaitingCleansing + '\'' +
+                ", lCR_CompanyKey='" + lCR_CompanyKey + '\'' +
+                ", sSourceSystem='" + sSourceSystem + '\'' +
+                ", sExternalKey='" + sExternalKey + '\'' +
+                ", bIsBroker='" + bIsBroker + '\'' +
+                ", bIsInsured='" + bIsInsured + '\'' +
+                ", bIsCedant='" + bIsCedant + '\'' +
+                ", bIsReinsurer='" + bIsReinsurer + '\'' +
+                ", bIsCandC='" + bIsCandC + '\'' +
+                ", bIsGEB='" + bIsGEB + '\'' +
+                ", bIsEA='" + bIsEA + '\'' +
+                ", bIsEAGCS='" + bIsEAGCS + '\'' +
+                ", bIsEAIBD='" + bIsEAIBD + '\'' +
+                ", bIsAgency='" + bIsAgency + '\'' +
+                ", bDoNotSendToCRM='" + bDoNotSendToCRM + '\'' +
+                ", sSearchAddress='" + sSearchAddress + '\'' +
+                ", sUpdateBy='" + sUpdateBy + '\'' +
+                ", sDomesticParentGUNSNumber='" + sDomesticParentGUNSNumber + '\'' +
+                ", sDomesticParentName='" + sDomesticParentName + '\'' +
+                ", sUltimateParentGUNSNumber='" + sUltimateParentGUNSNumber + '\'' +
+                ", sUltimateParentName='" + sUltimateParentName + '\'' +
+                '}';
+    }
 }

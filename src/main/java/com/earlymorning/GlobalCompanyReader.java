@@ -19,7 +19,7 @@ import java.util.List;
  */
 
 @Configuration
-@PropertySource("classpath:META-INF.com.earlymorning.properties.InboundFile.properties")
+@PropertySource("classpath:META-INF/com/earlymorning/properties/InboundFile.properties")
 @Component
 public class GlobalCompanyReader {
 

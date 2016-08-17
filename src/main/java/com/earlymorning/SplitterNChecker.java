@@ -15,9 +15,12 @@ import java.io.*;
  * Created by Dario on 10/08/2016.
  */
 @Configuration
-@PropertySource("classpath:META-INF.com.earlymorning.properties.InboundFile.properties")
+@PropertySource("classpath:META-INF/com/earlymorning/properties/InboundFile.properties")
 @Component
 public class SplitterNChecker {
+
+    private static final Logger logger = LoggerFactory.getLogger(SplitterNChecker.class);
+
     private FileReader fstreamIn;
     private BufferedReader in;
     private FileWriter fstreamOutErr;
@@ -25,16 +28,15 @@ public class SplitterNChecker {
     private FileWriter fstreamOutRig;
     private BufferedWriter outR;
     private String newNameErr;
-    private String newNameRig;
 
+    private String newNameRig;
     @Value("${path.file.temp}")
     private String pathTemp = "src/test/resources/input/temp/";
     @Value("${archive.failed.path}")
     private String pathErrors = "src/test/resources/output/errorsFile/";
+
     @Value("${archive.accepted.path}")
     private String pathAccepted= "src/test/resources/output/acceptedFile/";
-
-    private static final Logger logger = LoggerFactory.getLogger(SplitterNChecker.class);
 
 // ASSUMPTION: There'll be at least a correct record in the InboundFile
 

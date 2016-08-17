@@ -17,7 +17,7 @@ import static org.junit.Assert.assertTrue;
  * Created by Dario on 11/08/2016.
  */
 @Configuration
-@PropertySource("classpath:META-INF.com.earlymorning.properties.InboundFile.properties")
+@PropertySource("classpath:META-INF/com/earlymorning/properties/InboundFile.properties")
 public class ResequencerNShifterTest {
 
     private ResequencerNShifter controller;

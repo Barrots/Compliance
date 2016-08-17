@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * Created by Dario on 10/08/2016.
  */
 @Configuration
-@PropertySource("classpath:META-INF.com.earlymorning.properties.InboundFile.properties")
+@PropertySource("classpath:META-INF/com/earlymorning/properties/InboundFile.properties")
 public class ContentBasedRouterTest {
 
     @Value("${archive.failed.path}")
